@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <nav>
+        <ul>
+          <li><a href="">INFO</a></li>
+          <li><a href="">HTML</a></li>
+          <li><a href="">CSS</a></li>
+        </ul>
+      </nav>
+      <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo" alt="freeCodeCamp">
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <section role="region" aria-labelledby ="student-info">
+        <h2 id="student-info">
+          <div class="info">
+              <label for="student">student<span class="sr-only">(Date of Birth)</span></label>
+              <input type="text" name="name" id="student" placeholder="student name">
+          </div>
+          <div class="info">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="email">
+          </div>
+          <div class="info">
+            <label for="birth">birth</label>
+            <input type="text" type="date" name=""date id="birth" placeholder="birth" >
+          </div>
+
+        </h2>
+      </section>
+      <section role="region" aria-labelledby ="html-questions">
+        <h2 id="html-questions">
+          <div class="question-block"></div>
+          <div class="question-block"></div>
+        </h2>
+      </section>
+      <section role="region" aria-labelledby ="css-questions">
+        <h2 id="css-questions">
+
+        </h2>
+      </section>
+      </form>
+    </main>
+  </body>
+</html>
