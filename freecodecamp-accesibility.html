@@ -40,16 +40,63 @@
       </section>
       <section role="region" aria-labelledby ="html-questions">
         <h2 id="html-questions">
-          <div class="question-block"></div>
-          <div class="question-block"></div>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset name="answer" class="question">
+              <legend>true</legend>
+              <ul class="answers-list">
+                <li><label for="q1-a1">True <input id="q1-a1" value="True" type="radio" name="q1"></label></li>
+                <li><label for="q1-a2">False <input id="q1-a2" value="False" type="radio" name="q1"></label></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset name="answer" class="question">
+              <legend>false</legend>
+              <ul class="answers-list">
+                <li><label for="q2-a1">True <input value="True" id="q2-a1" type="radio" name="q2" ></label></li>
+                <li><label for="q2-a2">False <input value="False" id="q2-a2" type="radio" name="q2" ></label></li>
+              </ul>
+
+            </fieldset>
+
+          </div>
         </h2>
       </section>
       <section role="region" aria-labelledby ="css-questions">
         <h2 id="css-questions">
+          <div class="formrow">
+            <div class="question-block">
+              <label for="select">Css question</label>
+            </div>
+            <div class="answer">
+              <select required id="select" form="" id="">
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="textarea">Css question</label>
+            </div>
+            <div class="answer">
+              <textarea name="textarea" id="textarea" rows="3" cols="7" placeholder="example answer"></textarea>
+            </div>
+          </div>
 
         </h2>
       </section>
+      <button type="submit" name="Submit"> Send </button>
       </form>
     </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+San Francisco<br />
+California<br />
+USA
+      </address>
+    </footer>
   </body>
 </html>
